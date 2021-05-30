@@ -1,0 +1,31 @@
+﻿<Window x:Class="KursovayaOOPWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KursovayaOOPWPF"
+        mc:Ignorable="d" Height="537.028" Width="1145.991" Title="Учет услуг товаров в магазине">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="462" VerticalAlignment="Top" Width="888" Margin="0,44,0,0">
+            <TabItem Header="Игрушки" Margin="-2,0,1,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid HorizontalAlignment="Left" Height="434" VerticalAlignment="Top" Width="882" Name="AllSpisokToys"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Еда" Margin="-2,0,0,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Напитки" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="60" Margin="-2,0,0,0">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Label Content="Товары" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,467" Background="#00000000" Foreground="#FFE09C0A" FontSize="24" Height="39" Width="107" FontWeight="Bold"/>
+        <Label Content="Редактор" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="950,0,0,467" Background="#00000000" Foreground="#FFE09C0A" FontSize="24" Height="39" Width="117" FontWeight="Bold"/>
+        <!--   <Button Content="Добавить товар" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,66,0,0" Height="33" Cursor="Добавить товар" Click="AddClickButton"/> -->
+        <Button Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,113,0,0" Height="33"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,161,0,0" Height="33"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,64,0,0" Height="33" Click="AddClassButtonClick"/>
+        <Button Content="Обновить" HorizontalAlignment="Left" Margin="903,212,0,0" VerticalAlignment="Top" Width="214" Click="ObnovlenButtonClick"/>
+
+    </Grid>
+</Window>
