@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KursovayaOOPWPF"
         mc:Ignorable="d"
-        Title="WindowAddClass" Height="398.75" Width="430">
+        Title="WindowAddClass" Height="452.203" Width="430">
     <Grid Margin="1,0,-1,0">
         <Label Content="Добавление" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="145,10,143,0" FontSize="20" FontWeight="Bold" Width="134" Foreground="#FFE09C0A"/>
         <Label Content="Выберите продукцию которую хотите добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,69,0,0"/>
-        <ComboBox x:Name="ComboProdukt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="280,73,0,0"/>
+        <ComboBox x:Name="ComboProdukt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="280,73,0,0" SelectionChanged="ComboProdukt_SelectionChanged"/>
         <Label Content="Номер продукции" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,103,0,0"/>
         <TextBox x:Name="textBoxNum" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,103,0,0"/>
         <Label Content="Имя продукции" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,134,0,0"/>
@@ -19,12 +19,16 @@
         <Label Content="Дата производства" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,196,0,0"/>
         <Label Content="Масса" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,227,0,0"/>
         <TextBox x:Name="textBoxMass" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,231,0,0"/>
-        <Label Content="Структура" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,258,0,0"/>
-        <TextBox x:Name="textBoxStruckt" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,261,0,0"/>
-        <Label Content="Возрастные ограничения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,289,0,0"/>
-        <TextBox x:Name="textBoxAgeLimit" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,293,0,0"/>
+        <Label x:Name="lablebox1Rand" Content="Структура" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1,258,0,0"/>
+        <TextBox x:Name="textBox1Rand" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,261,0,0"/>
+        <Label x:Name="lablebox2Rand" Content="Возрастные ограничения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,289,0,0"/>
+        <TextBox x:Name="textBox2Rand" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,293,0,0"/>
         <DatePicker x:Name="datePickeData" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,199,0,0" Width="120" Height="23"/>
-        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="337,338,0,0" VerticalAlignment="Top" Width="75" Click="SaveButtonClick"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="337,391,0,0" VerticalAlignment="Top" Width="75" Click="SaveButtonClick"/>
+        <TextBox x:Name="textBox3Rand" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,324,0,0"/>
+        <Label x:Name="lablebox3Rand" Content="Возрастные ограничения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,320,0,0"/>
+        <TextBox x:Name="textBox4Rand" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="155,354,0,0"/>
+        <Label x:Name="lablebox4Rand" Content="Возрастные ограничения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,350,0,0"/>
 
     </Grid>
 </Window>

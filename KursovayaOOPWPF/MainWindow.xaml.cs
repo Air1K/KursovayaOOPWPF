@@ -36,9 +36,10 @@ namespace KursovayaOOPWPF
 
         private void ObnovlenButtonClick(object sender, RoutedEventArgs e)
         {
-            foreach (Toys i in DB.game)
+           
                 AllSpisokToys.ItemsSource = DB.game;
-           // AllSpisokToys.ItemsSource = (i.thisNumProduct, i.thisNameProduct, i.thisZena, i.thisDataManufacturing, i.thisMassa, i.thisStructureToys, i.thisAgelimit);
+            datagridBakeryProducts.ItemsSource = DB.Bakery;
+          
         }
 
 

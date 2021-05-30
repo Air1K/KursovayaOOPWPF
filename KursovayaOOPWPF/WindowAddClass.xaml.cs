@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace KursovayaOOPWPF
 {
     /// <summary>
@@ -23,18 +24,48 @@ namespace KursovayaOOPWPF
         {
             InitializeComponent();
             ComboProdukt.Items.Add("Игрушки");
+            ComboProdukt.Items.Add("Выпечка");
+            ComboProdukt.Items.Add("Рыбные продукты");
+            //textBox1Rand.Visible = false;
+            textBox3Rand.Visibility = Visibility.Collapsed;
+            textBox4Rand.Visibility = Visibility.Collapsed;
+            lablebox3Rand.Visibility = Visibility.Collapsed;
+            lablebox4Rand.Visibility = Visibility.Collapsed;
         }
-        
+        string id = "";
         //    ComboProdukt.Items.Add("Театр");
         AddClass gg = new AddClass();
         private void SaveButtonClick(object sender, RoutedEventArgs e)
         {
+            gg.AddEl(id, textBoxNum.Text, textBoxName.Text, textBoxZena.Text, datePickeData.Text, textBoxMass.Text, textBox1Rand.Text, textBox2Rand.Text, textBox3Rand.Text, textBox4Rand.Text);
+        }
+
+        private void ComboProdukt_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
             
             if (ComboProdukt.SelectedItem.ToString() == "Игрушки")
             {
-                gg.AddEl("0", textBoxNum.Text, textBoxName.Text, textBoxZena.Text, datePickeData.Text, textBoxMass.Text, textBoxStruckt.Text, textBoxAgeLimit.Text);
-                //textBox5.Text, textBox6.Text, textBox1.Text, textBox2.Text, textBox4.Text, dateTimePicker1.Text, textBox3.Text
-
+                id = "0";
+                textBox3Rand.Visibility = Visibility.Collapsed;
+                textBox4Rand.Visibility = Visibility.Collapsed;
+                lablebox3Rand.Visibility = Visibility.Collapsed;
+                lablebox4Rand.Visibility = Visibility.Collapsed;
+            }
+            if (ComboProdukt.SelectedItem.ToString() == "Выпечка")
+            {
+                id = "1";
+                lablebox3Rand.Visibility = Visibility.Visible;
+                lablebox4Rand.Visibility = Visibility.Visible;
+                lablebox1Rand.Content = "Кол-во калорий";
+                lablebox2Rand.Content = "Структура";
+                textBox3Rand.Visibility = Visibility.Visible;
+                textBox4Rand.Visibility = Visibility.Visible;
+                lablebox3Rand.Content = "Тип выпечки";
+                lablebox4Rand.Content = "Сорт";
+            }
+            if (ComboProdukt.SelectedItem.ToString() == "Рыбные продукты")
+            {
+                id = "2";
             }
         }
     }

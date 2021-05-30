@@ -13,10 +13,43 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Еда" Margin="-2,0,0,0">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TabControl HorizontalAlignment="Left" Height="434" VerticalAlignment="Top" Width="882">
+                        <TabItem Header="Выпечка" Margin="-2,0,-1,0">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid x:Name="datagridBakeryProducts" HorizontalAlignment="Left" Height="406" VerticalAlignment="Top" Width="876"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Морепродукты" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="95" Margin="-1,0,0,0">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid x:Name="datagridSeafood" HorizontalAlignment="Left" Height="406" VerticalAlignment="Top" Width="876"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
             </TabItem>
             <TabItem Header="Напитки" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="60" Margin="-2,0,0,0">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DatagridDrink" HorizontalAlignment="Left" Height="434" VerticalAlignment="Top" Width="882"/>
+                    <TabControl HorizontalAlignment="Left" Height="434" VerticalAlignment="Top" Width="882">
+                        <TabItem Header="Алкоголь">
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <DataGrid x:Name="datagridAlcogol" HorizontalAlignment="Left" Height="406" VerticalAlignment="Top" Width="876"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Соки">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid x:Name="datagridJusu" HorizontalAlignment="Left" Height="406" VerticalAlignment="Top" Width="876"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
             </TabItem>
         </TabControl>
         <Label Content="Товары" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,467" Background="#00000000" Foreground="#FFE09C0A" FontSize="24" Height="39" Width="107" FontWeight="Bold"/>
