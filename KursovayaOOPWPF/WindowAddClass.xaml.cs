@@ -66,6 +66,14 @@ namespace KursovayaOOPWPF
             if (ComboProdukt.SelectedItem.ToString() == "Рыбные продукты")
             {
                 id = "2";
+                lablebox3Rand.Visibility = Visibility.Visible;
+                lablebox4Rand.Visibility = Visibility.Visible;
+                lablebox1Rand.Content = "Кол-во калорий";
+                lablebox2Rand.Content = "Структура";
+                textBox3Rand.Visibility = Visibility.Visible;
+                textBox4Rand.Visibility = Visibility.Visible;
+                lablebox3Rand.Content = "Тип продукта";
+                lablebox4Rand.Content = "Место ловли";
             }
         }
     }

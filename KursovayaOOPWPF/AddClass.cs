@@ -10,6 +10,7 @@ namespace KursovayaOOPWPF
     {
         public static List<Toys> game = new List<Toys>();
         public static List<BakeryProducts> Bakery = new List<BakeryProducts>();
+        public static List<Seafood> Seaf = new List<Seafood>();
     }
     public class AddClass
     {
@@ -27,9 +28,9 @@ namespace KursovayaOOPWPF
             }
             if (id == "2")
             {
-                //DB.game.Add(new Toys(NumProduct, NameProduct, Zena, DataManufacturing, Massa, Rand1, Rand2));
+                DB.Seaf.Add(new Seafood(NumProduct, NameProduct, Zena, DataManufacturing, Massa, Rand1, Rand2, Rand3, Rand4));
             }
-
+           // MainWindow.ShowDataGrid();
         }
 
     }

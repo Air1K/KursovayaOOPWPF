@@ -33,13 +33,29 @@ namespace KursovayaOOPWPF
             addclass.Show();
             //AllSpisokToys.ItemsSource = "";
         }
+        public static void ShowDataGrid()
+        {
+          //  AllSpisokToys.ItemsSource = DB.game;
+            //datagridBakeryProducts.ItemsSource = DB.Bakery;
 
+//            datagridSeafood.ItemsSource = DB.Seaf;
+        }
         private void ObnovlenButtonClick(object sender, RoutedEventArgs e)
         {
            
                 AllSpisokToys.ItemsSource = DB.game;
+            AllSpisokToys.Items.Refresh();
+            
             datagridBakeryProducts.ItemsSource = DB.Bakery;
-          
+            datagridBakeryProducts.Items.Refresh();
+
+            datagridSeafood.ItemsSource = DB.Seaf;
+            datagridSeafood.Items.Refresh();
+
+            //datagridSeafood.
+            //(i.thisNumProduct, i.thisNameProduct, i.thisZena, i.thisDataManufacturing, i.thisMassa, i.thisStructureFood, i.thisKolVoKCalories, i.thisFishingPlace, i.thisTipSeafood);
+
+
         }
 
 

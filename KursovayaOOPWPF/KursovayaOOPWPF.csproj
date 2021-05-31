@@ -58,6 +58,7 @@
     <Compile Include="AddClass.cs" />
     <Compile Include="BakeryProducts.cs" />
     <Compile Include="Food.cs" />
+    <Compile Include="Seafood.cs" />
     <Compile Include="Toys.cs" />
     <Compile Include="WindowAddClass.xaml.cs">
       <DependentUpon>WindowAddClass.xaml</DependentUpon>
