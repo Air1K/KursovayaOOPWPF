@@ -26,6 +26,8 @@ namespace KursovayaOOPWPF
             ComboProdukt.Items.Add("Игрушки");
             ComboProdukt.Items.Add("Выпечка");
             ComboProdukt.Items.Add("Рыбные продукты");
+            ComboProdukt.Items.Add("Алкоголь");
+            ComboProdukt.Items.Add("Соки");
             //textBox1Rand.Visible = false;
             textBox3Rand.Visibility = Visibility.Collapsed;
             textBox4Rand.Visibility = Visibility.Collapsed;
@@ -75,6 +77,31 @@ namespace KursovayaOOPWPF
                 lablebox3Rand.Content = "Тип продукта";
                 lablebox4Rand.Content = "Место ловли";
             }
+            if (ComboProdukt.SelectedItem.ToString() == "Алкоголь")
+            {
+                id = "3";
+                lablebox3Rand.Visibility = Visibility.Visible;
+                lablebox4Rand.Visibility = Visibility.Visible;
+                lablebox1Rand.Content = "Возрастные ограничения";
+                lablebox2Rand.Content = "Структура напитка";
+                textBox3Rand.Visibility = Visibility.Visible;
+                textBox4Rand.Visibility = Visibility.Visible;
+                lablebox3Rand.Content = "Тип продукта";
+                lablebox4Rand.Content = "Градус";
+            }
+            if (ComboProdukt.SelectedItem.ToString() == "Соки")
+            {
+                id = "4";
+                lablebox3Rand.Visibility = Visibility.Visible;
+                lablebox4Rand.Visibility = Visibility.Visible;
+                lablebox1Rand.Content = "Возрастные ограничения";
+                lablebox2Rand.Content = "Структура напитка";
+                textBox3Rand.Visibility = Visibility.Visible;
+                textBox4Rand.Visibility = Visibility.Visible;
+                lablebox3Rand.Content = "Тип сока";
+                lablebox4Rand.Content = "Бренд";
+            }
         }
     }
 }
+

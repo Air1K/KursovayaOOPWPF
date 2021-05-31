@@ -52,10 +52,21 @@ namespace KursovayaOOPWPF
             datagridSeafood.ItemsSource = DB.Seaf;
             datagridSeafood.Items.Refresh();
 
+            datagridAlcogol.ItemsSource = DB.Alco;
+            datagridAlcogol.Items.Refresh();
+
+            datagridJusu.ItemsSource = DB.Juic;
+            datagridJusu.Items.Refresh();
             //datagridSeafood.
             //(i.thisNumProduct, i.thisNameProduct, i.thisZena, i.thisDataManufacturing, i.thisMassa, i.thisStructureFood, i.thisKolVoKCalories, i.thisFishingPlace, i.thisTipSeafood);
 
 
+        }
+
+        private void DellElement(object sender, RoutedEventArgs e)
+        {
+            Dell delClick = new Dell();
+            delClick.Show();
         }
 
 

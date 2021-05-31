@@ -11,6 +11,8 @@ namespace KursovayaOOPWPF
         public static List<Toys> game = new List<Toys>();
         public static List<BakeryProducts> Bakery = new List<BakeryProducts>();
         public static List<Seafood> Seaf = new List<Seafood>();
+        public static List<Alcohol> Alco = new List<Alcohol>();
+        public static List<Juices> Juic = new List<Juices>();
     }
     public class AddClass
     {
@@ -24,13 +26,21 @@ namespace KursovayaOOPWPF
             }
             if (id == "1")
             {
-                DB.Bakery.Add(new BakeryProducts(NumProduct, NameProduct, Zena, DataManufacturing, Massa, Rand1, Rand2, Rand3, Rand4));
+                DB.Bakery.Add(new BakeryProducts(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
             }
             if (id == "2")
             {
-                DB.Seaf.Add(new Seafood(NumProduct, NameProduct, Zena, DataManufacturing, Massa, Rand1, Rand2, Rand3, Rand4));
+                DB.Seaf.Add(new Seafood(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
             }
-           // MainWindow.ShowDataGrid();
+            if (id == "3")
+            {
+                DB.Alco.Add(new Alcohol(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
+            }
+            if (id == "4")
+            {
+                DB.Juic.Add(new Juices(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
+            }
+            // MainWindow.ShowDataGrid();
         }
 
     }
