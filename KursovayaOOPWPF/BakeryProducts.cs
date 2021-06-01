@@ -25,7 +25,7 @@ namespace KursovayaOOPWPF
             { this.TipBakeryProducts = value is string ? value : null; }
         }
 
-        public string thisStructureDrink
+        public string thisSort
         {
             get
             { return this.Sort; }

@@ -69,6 +69,12 @@ namespace KursovayaOOPWPF
             delClick.Show();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Edit Ed = new Edit();
+            Ed.Show();
+        }
+
 
 
         /*  private void AddClickButton(object sender, RoutedEventArgs e)

@@ -55,7 +55,7 @@
         <Label Content="Товары" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,467" Background="#00000000" Foreground="#FFE09C0A" FontSize="24" Height="39" Width="107" FontWeight="Bold"/>
         <Label Content="Редактор" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="950,0,0,467" Background="#00000000" Foreground="#FFE09C0A" FontSize="24" Height="39" Width="117" FontWeight="Bold"/>
         <!--   <Button Content="Добавить товар" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,66,0,0" Height="33" Cursor="Добавить товар" Click="AddClickButton"/> -->
-        <Button Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,113,0,0" Height="33"/>
+        <Button Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,113,0,0" Height="33" Click="Button_Click"/>
         <Button x:Name="DellEl" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,161,0,0" Height="33" Click="DellElement"/>
         <Button Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,64,0,0" Height="33" Click="AddClassButtonClick"/>
         <Button Content="Обновить" HorizontalAlignment="Left" Margin="903,212,0,0" VerticalAlignment="Top" Width="214" Click="ObnovlenButtonClick"/>
