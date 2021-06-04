@@ -20,7 +20,7 @@ namespace KursovayaOOPWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+      public MainWindow()
         {
             InitializeComponent();
             
@@ -73,6 +73,18 @@ namespace KursovayaOOPWPF
         {
             Edit Ed = new Edit();
             Ed.Show();
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            Serialize serialize = new Serialize();
+            serialize.Save();
+        }
+
+        private void LoadButton_Click(object sender, RoutedEventArgs e)
+        {
+            Serialize serialize = new Serialize();
+            serialize.Load();
         }
 
 

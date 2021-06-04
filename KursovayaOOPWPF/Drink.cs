@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace KursovayaOOPWPF
 {
+    [Serializable]
     public class Drink : Product
     {
         private string AgelimitDrink;

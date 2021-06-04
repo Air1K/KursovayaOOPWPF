@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace KursovayaOOPWPF
 {
+    [Serializable]
     public class Toys : Product //Игрушки
     {
         private string StructureToys;

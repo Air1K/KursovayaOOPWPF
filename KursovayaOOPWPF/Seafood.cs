@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace KursovayaOOPWPF
 {
+    [Serializable]
     public class Seafood : Food //Рыбные продукты
     {
         private string TipSeafood;

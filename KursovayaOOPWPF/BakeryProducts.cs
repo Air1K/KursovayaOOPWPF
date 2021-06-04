@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace KursovayaOOPWPF
 {
-   public class BakeryProducts : Food //Выпечка
+    [Serializable]
+    public class BakeryProducts : Food //Выпечка
     {
         private string TipBakeryProducts;
         private string Sort;

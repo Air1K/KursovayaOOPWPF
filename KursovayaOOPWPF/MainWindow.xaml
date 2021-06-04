@@ -59,6 +59,8 @@
         <Button x:Name="DellEl" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,161,0,0" Height="33" Click="DellElement"/>
         <Button Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="214" Margin="903,64,0,0" Height="33" Click="AddClassButtonClick"/>
         <Button Content="Обновить" HorizontalAlignment="Left" Margin="903,212,0,0" VerticalAlignment="Top" Width="214" Click="ObnovlenButtonClick"/>
+        <Button x:Name="SaveButton" Content="Сохранить" HorizontalAlignment="Left" Margin="903,442,0,0" VerticalAlignment="Top" Width="225" Click="SaveButton_Click"/>
+        <Button x:Name="LoadButton" Content="Загрузить" HorizontalAlignment="Left" Margin="903,467,0,0" VerticalAlignment="Top" Width="225" Click="LoadButton_Click"/>
 
     </Grid>
 </Window>
