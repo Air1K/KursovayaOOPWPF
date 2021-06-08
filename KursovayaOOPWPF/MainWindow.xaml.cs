@@ -79,12 +79,15 @@ namespace KursovayaOOPWPF
         {
             Serialize serialize = new Serialize();
             serialize.Save();
+            MessageBox.Show("Файл успешно сохранен!");
+
         }
 
         private void LoadButton_Click(object sender, RoutedEventArgs e)
         {
             Serialize serialize = new Serialize();
             serialize.Load();
+            MessageBox.Show("Файл успешно загружен!");
         }
 
 

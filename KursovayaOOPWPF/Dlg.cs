@@ -29,6 +29,18 @@ namespace KursovayaOOPWPF
         {
             Const += "Добавлена выпечка";
         }
+        void OnAddSeafood()
+        {
+            Const += "Добавлен морепродукт";
+        }
+        void OnAddAlcohol()
+        {
+            Const += "Добавлен алкоголь";
+        }
+        void OnAddJuices()
+        {
+            Const += "Добавлен сок";
+        }
 
         public string DspOnMsg(object GetClass)
         {
@@ -40,6 +52,15 @@ namespace KursovayaOOPWPF
                     break;
                 case "KursovayaOOPWPF.BakeryProducts":
                     dsp += OnAddBakery;
+                    break;
+                case "KursovayaOOPWPF.Seafood":
+                    dsp += OnAddSeafood;
+                    break;
+                case "KursovayaOOPWPF.Alcohol":
+                    dsp += OnAddAlcohol;
+                    break;
+                case "KursovayaOOPWPF.Juices":
+                    dsp += OnAddJuices;
                     break;
             }
             dsp();

@@ -36,15 +36,21 @@ namespace KursovayaOOPWPF
             }
             if (id == "2")
             {
-                DB.Seaf.Add(new Seafood(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
+                Seafood seafood = new Seafood(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa);
+                DB.Seaf.Add(seafood);
+                MessageBox.Show(dlg.DspOnMsg(seafood));
             }
             if (id == "3")
-            {
-                DB.Alco.Add(new Alcohol(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
+            { 
+                Alcohol alcohol = new Alcohol(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa);
+                DB.Alco.Add(alcohol);
+                MessageBox.Show(dlg.DspOnMsg(alcohol));
             }
             if (id == "4")
             {
-                DB.Juic.Add(new Juices(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa));
+                Juices juices = new Juices(Rand3, Rand4, Rand1, Rand2, NumProduct, NameProduct, Zena, DataManufacturing, Massa);
+                DB.Juic.Add(juices);
+                MessageBox.Show(dlg.DspOnMsg(juices));
             }
             // MainWindow.ShowDataGrid();
         }
