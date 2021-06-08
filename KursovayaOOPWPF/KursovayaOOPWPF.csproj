@@ -61,6 +61,7 @@
     <Compile Include="Dell.xaml.cs">
       <DependentUpon>Dell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dlg.cs" />
     <Compile Include="Drink.cs" />
     <Compile Include="Edit.xaml.cs">
       <DependentUpon>Edit.xaml</DependentUpon>
